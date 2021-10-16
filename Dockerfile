@@ -9,7 +9,9 @@ dnf -qy module disable postgresql && \
 dnf install -y postgresql13-server && \
 dnf clean all && \
 mkdir /opt/sh/postgre && \
-chown -R sh:sh /opt/sh
+chown -R sh:sh /opt/sh && \
+chown -R sh:sh /usr/pgsql-13 && \
+chown -R sh:sh /var/run/postgresql
 
 
 WORKDIR /opt/sh/postgre
