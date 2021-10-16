@@ -11,3 +11,4 @@ dnf clean all && \
 mkdir /opt/sh/postgre
 
 WORKDIR /opt/sh/postgre
+USER sh
